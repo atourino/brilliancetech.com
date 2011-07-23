@@ -79,23 +79,15 @@ $(function(){
 	//	Add additional functions here...
 	//	********************************
 	
-	
-
-    var sliderID = "#slider_1";
-    $(sliderID).jCarouselLite({
-      btnNext: sliderID + " .next",
-      btnPrev: sliderID + " .prev",
-      auto: 7000,
-      visible: 1,
-      afterEnd: function(e) {
-          var active_text = e[0].id;
-          $('.swap_this').fadeOut('fast', function() {
-              $('#text_' + active_text).toggle().siblings().hide();
-              $('.swap_this').fadeIn('fast');
-          });
-      }
+    $(function(){
+        $("#clientes_slides").slides({
+            generateNextPrev: false,
+            generatePagination: false,
+            play: 7000
+        });
     });
 	
+
 	
 }); // end document.ready
 
