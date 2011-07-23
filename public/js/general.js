@@ -85,7 +85,7 @@ $(function(){
     $(sliderID).jCarouselLite({
       btnNext: sliderID + " .next",
       btnPrev: sliderID + " .prev",
-      //auto: 7000,
+      auto: 7000,
       visible: 1,
       afterEnd: function(e) {
           var active_text = e[0].id;
