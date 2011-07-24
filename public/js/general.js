@@ -83,7 +83,8 @@ $(function(){
         $("#clientes_slides").slides({
             generateNextPrev: false,
             generatePagination: false,
-            play: 7000
+            play: 7000,
+            slideSpeed: 450
         });
     });
 	
